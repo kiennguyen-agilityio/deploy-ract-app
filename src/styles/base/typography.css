@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Helvetica-bold';
+  src: url('../../assets//font//HelveticaNeueBold.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica-medium';
+  src: url('../../assets//font/HelveticaNeueMedium.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica-regular';
+  src: url('../../assets/font/HelveticaNeue-Roman.otf');
+}
+
+body {
+  height: 100vh;
+  font-size: 14px;
+  font-family: 'Helvetica-regular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5e5e5;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}

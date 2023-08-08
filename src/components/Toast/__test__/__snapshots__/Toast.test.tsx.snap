@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast component renders error toast correctly 1`] = `
+<div
+  class="toast error"
+>
+  <div
+    class="notification"
+  >
+    <span
+      class="material-symbols-outlined"
+    >
+      warning
+    </span>
+    <div
+      class="message"
+    >
+      <p
+        class="content"
+      >
+        Error message
+      </p>
+    </div>
+    <button
+      aria-label="Close"
+      class="btn-close"
+      type="button"
+    >
+      ×
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Toast component renders success toast correctly 1`] = `
+<div
+  class="toast success"
+>
+  <div
+    class="notification"
+  >
+    <span
+      class="material-symbols-outlined"
+    >
+      done
+    </span>
+    <div
+      class="message"
+    >
+      <p
+        class="content"
+      >
+        Success message
+      </p>
+    </div>
+    <button
+      aria-label="Close"
+      class="btn-close"
+      type="button"
+    >
+      ×
+    </button>
+  </div>
+</div>
+`;
