@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders button correctly 1`] = `
+<button
+  class="btn btn-primary btn-color-default btn-sm  "
+  type="button"
+>
+  <span>
+    Submit
+     (0)
+  </span>
+</button>
+`;
+
+exports[`Button component renders button with count when variant is primary 1`] = `
+<span>
+  Submit
+   (10)
+</span>
+`;
+
+exports[`Button component renders button with secondary variant 1`] = `
+<span>
+  Submit
+</span>
+`;

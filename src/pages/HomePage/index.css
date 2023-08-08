@@ -1,0 +1,33 @@
+.homepage-container {
+  background-color: var(--color-primary);
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(56, 67, 84, 0.05);
+  border-radius: 4px;
+  padding: 50px;
+  align-items: center;
+}
+
+.homepage-container h1 {
+  font-family: inherit;
+  font-weight: var(--font-weight-extrabold);
+  line-height: 1.1;
+  color: inherit;
+  font-size: var(--font-size-md);
+  margin-bottom: 10px;
+}
+
+.homepage-container h2 {
+  color: var(--color-gray);
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.button-topic-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

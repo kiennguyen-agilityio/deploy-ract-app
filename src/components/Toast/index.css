@@ -1,0 +1,59 @@
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.notification {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.notification .status {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.notification .content {
+  margin: 0;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  color: var(--color-gray);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  margin-left: 10px;
+  padding: 0;
+}
+
+.btn-close:hover {
+  color: var(--color-red);
+}
+
+.toast:not(.showing):not(.show) {
+  opacity: 1 !important;
+}
+
+.toast.success .notification {
+  background-color: var(--color-success);
+}
+
+.toast.success .check-icon {
+  color: var(--color-red);
+}
+
+.toast.error .notification {
+  background-color: var(--color-danger);
+}
+
+.toast.error .error-icon {
+  color: var(--color-danger);
+}

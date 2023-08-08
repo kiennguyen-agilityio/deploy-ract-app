@@ -1,0 +1,11 @@
+.btn-delete {
+  padding: 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+  border-radius: 3px;
+  color: var(--color-red);
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+}

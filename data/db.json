@@ -1,0 +1,45 @@
+{
+  "vocabularies": [
+    {
+      "id": "1691045475589",
+      "firstLanguage": "phone",
+      "secondLanguage": "điện thoại",
+      "topicId": "2"
+    },
+    {
+      "id": "1691049858542",
+      "firstLanguage": "dog",
+      "secondLanguage": "con chó",
+      "topicId": "1"
+    },
+    {
+      "id": "1691049858806",
+      "firstLanguage": "dog",
+      "secondLanguage": "con chó",
+      "topicId": "1"
+    },
+    {
+      "id": "1691049859926",
+      "firstLanguage": "dog",
+      "secondLanguage": "con chó",
+      "topicId": "1"
+    }
+  ],
+  "topics": [
+    {
+      "id": "1",
+      "name": "School",
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "name": "Laptop",
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "name": "Fruit",
+      "quantity": 1
+    }
+  ]
+}

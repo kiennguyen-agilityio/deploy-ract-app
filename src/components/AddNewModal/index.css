@@ -1,0 +1,101 @@
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-content {
+    padding: 20px;
+    border: none;
+    max-width: 500px;
+    max-height: 80vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal-content h1 {
+    margin-bottom: 30px;
+    color: inherit;
+    font-size: var(--font-size-lg);
+  }
+
+  .input-container {
+    margin-bottom: 30px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-content input::placeholder {
+    color: var(--color-tertiary);
+    font-size: var(--font-size-sm);
+  }
+
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .modal-content {
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .modal-content h2 {
+    margin-bottom: 50px;
+    color: var(--color-tertiary);
+  }
+
+  .input-container {
+    margin-bottom: 30px;
+  }
+
+  .modal-content input {
+    color: #333;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-container button {
+    color: var(--color-primary);
+  }
+
+  .close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+.button-container button {
+  color: var(--color-primary);
+}
+
+.error-message {
+  color: var(--color-red);
+  margin-top: 4px;
+}

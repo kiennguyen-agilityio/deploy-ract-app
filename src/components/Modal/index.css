@@ -1,0 +1,74 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-weight-extrabold);
+}
+
+/* Modal Close Button */
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Modal Body */
+.modal-body {
+  margin-top: 10px;
+}
+
+/* Modal Footer */
+.modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Confirm Button */
+.modal-confirm-button {
+  background-color: var(--color-blue);
+  color: var(--color-primary);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Cancel Button */
+.modal-cancel-button {
+  background-color: var(--color--light-gray);
+  color: var(--color-tertiary);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
