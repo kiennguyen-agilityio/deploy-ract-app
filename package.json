@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite server.js",
-    "build": "vite build server.js",
+    "dev": "vite",
+    "build": "vite build",
     "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.jsx",
     "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.jsx",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
