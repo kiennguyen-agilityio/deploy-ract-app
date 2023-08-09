@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite server.js",
+    "build": "vite build server.js",
     "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.jsx",
     "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .js,.jsx",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
@@ -25,7 +25,6 @@
     "vite-plugin-environment": "^1.1.3"
   },
   "devDependencies": {
-    
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-flow": "^7.22.5",
