@@ -26,7 +26,8 @@ const TranslationPage: React.FC = () => {
   const firstLanguageRef = useRef<string>('');
   const secondLanguageRef = useRef<string>('');
   const [error, setError] = useState<string | null>(null);
-  const [inputError, setInputError] = useState<string | null>(null);
+  const [inputErrorFirst, setInputErrorFirst] = useState<string | null>(null);
+  const [inputErrorSecond, setInputErrorSecond] = useState<string | null>(null);
 
   const handleAddNew = useCallback(
     async (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,25 +49,17 @@ const TranslationPage: React.FC = () => {
     [onAddVocabulary, topicId]
   );
 
-  const handleDismissError = () => {
-    setError(null);
-  };
-
-  const handleDelete = async (vocabularyId: string) => {
-    onDeleteVocabulary(topicId, vocabularyId);
-  };
-
   const handleChangeFirstLanguage = (e: React.ChangeEvent<HTMLInputElement>) => {
     let inputValue = e.target.value;
     const isValid = REGEX.TRIM_SPACE.test(inputValue);
 
     if (!isValid) {
-      setInputError(MESSAGE_ERRORS.TRIM_SPACE_NOTICE);
+      setInputErrorFirst(MESSAGE_ERRORS.TRIM_SPACE_NOTICE);
     } else {
-      setInputError(null);
+      setInputErrorFirst(null);
+      firstLanguageRef.current = inputValue.trim();
     }
 
-    firstLanguageRef.current = inputValue.trim();
     firstLanguageRef.current = inputValue;
   };
 
@@ -75,13 +68,21 @@ const TranslationPage: React.FC = () => {
     const isValid = REGEX.TRIM_SPACE.test(inputValue);
 
     if (!isValid) {
-      setInputError(MESSAGE_ERRORS.TRIM_SPACE_NOTICE);
+      setInputErrorSecond(MESSAGE_ERRORS.TRIM_SPACE_NOTICE);
     } else {
-      setInputError(null);
+      setInputErrorSecond(null);
+      secondLanguageRef.current = inputValue.trim();
     }
 
-    secondLanguageRef.current = inputValue.trim();
     secondLanguageRef.current = inputValue;
+  };
+
+  const handleDismissError = () => {
+    setError(null);
+  };
+
+  const handleDelete = async (vocabularyId: string) => {
+    onDeleteVocabulary(topicId, vocabularyId);
   };
 
   useEffect(() => {
@@ -106,14 +107,14 @@ const TranslationPage: React.FC = () => {
             title="English(native)"
             onChange={handleChangeFirstLanguage}
           />
-          {inputError && <div className="error-message">{inputError}</div>}
+          {inputErrorFirst && <div className="error-message">{inputErrorFirst}</div>}
           <Input
             variant="secondary"
             name="vietnamese"
             title="Vietnamese"
             onChange={handleChangeSecondLanguage}
           />
-          {inputError && <div className="error-message">{inputError}</div>}
+          {inputErrorSecond && <div className="error-message">{inputErrorSecond}</div>}
 
           <Button type="submit" variant="tertiary" size="sm" label="Add" />
         </div>
